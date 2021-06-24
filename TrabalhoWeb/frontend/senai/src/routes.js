@@ -2,8 +2,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import HelloMessage from './paginas/Teste/HelloMessage';
-import ListarLivros2 from './paginas/Teste/Livro2';
-import CadastroLivro from './paginas/Teste/CadastroLivro';
+//import ListarLivros2 from './paginas/Teste/Livro2';
+//import CadastroLivro from './paginas/Teste/CadastroLivro';
 import CadastroUsuario from './paginas/Teste/CadastroUsuario';
 import Login from './paginas/Teste/Login';
 import CadastroVinho from './paginas/Teste/CadastroVinho';
