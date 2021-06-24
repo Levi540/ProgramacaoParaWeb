@@ -13,8 +13,8 @@ function Routes() {
         <BrowserRouter>
             <Switch>
                 <Route path='/' exact={true} component={HelloMessage} />
-                <Route path='/livros' exact={true} component={ListarLivros2} />
-                <Route path='/cadastrolivro' exact={true} component={CadastroLivro} />
+                //<Route path='/livros' exact={true} component={ListarLivros2} />
+                //<Route path='/cadastrolivro' exact={true} component={CadastroLivro} />
                 <Route path='/cadastrousuario' exact={true} component={CadastroUsuario} />
                 <Route path='/login' exact={true} component={Login} />
                 <Route path='/cadastrovinho' exact={true} component={CadastroVinho} />
