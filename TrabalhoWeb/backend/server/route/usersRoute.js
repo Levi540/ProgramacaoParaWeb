@@ -14,4 +14,10 @@ router.post('/user', async function(req, res) {
     }
 });
 
+router.get('/user/:login', async function (req, res) {
+    console.log(req.params.login);
+    const user = await usersService.getUser(req.params.login);
+    res.json(user);
+});
+
 module.exports = router;
