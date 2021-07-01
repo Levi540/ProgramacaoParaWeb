@@ -15,7 +15,7 @@ router.post('/carrinho', async function(req, res) {
 });
 
 router.get('/carrinho/:id', async function (req, res) {
-    const carrinho = await carrinhoService.getBook(req.params.id);
+    const carrinho = await carrinhoService.getCarrinho(req.params.id);
     res.json(carrinho);
 });
 
