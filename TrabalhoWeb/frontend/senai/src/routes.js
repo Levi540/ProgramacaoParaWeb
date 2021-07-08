@@ -8,6 +8,8 @@ import CadastroUsuario from './paginas/Teste/CadastroUsuario';
 import Login from './paginas/Teste/Login';
 import CadastroVinho from './paginas/Teste/CadastroVinho';
 import menu from './paginas/Teste/menu';
+import Usuarios from './paginas/Teste/Usuarios';
+import Produtos from './paginas/Teste/Produtos';
 
 
 function Routes() {
@@ -15,12 +17,12 @@ function Routes() {
         <BrowserRouter>
             <Switch>
                 <Route path='/' exact={true} component={HelloMessage} />
-                //<Route path='/livros' exact={true} component={ListarLivros2} />
-                //<Route path='/cadastrolivro' exact={true} component={CadastroLivro} />
                 <Route path='/cadastrousuario' exact={true} component={CadastroUsuario} />
                 <Route path='/login' exact={true} component={Login} />
                 <Route path='/cadastrovinho' exact={true} component={CadastroVinho} />
                 <Route path='/menu' exact={true} component={menu} />
+                <Route path='/usuarios' exact={true} component={Usuarios} />
+                <Route path='/produtos' exact={true} component={Produtos} />
             </Switch>
         </BrowserRouter>
     );

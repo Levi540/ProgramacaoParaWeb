@@ -20,4 +20,9 @@ router.get('/user/:login', async function (req, res) {
     res.json(user);
 });
 
+router.get('/users', async function (req, res) {
+    const users = await usersService.getUsers();
+    res.json(users);
+});
+
 module.exports = router;

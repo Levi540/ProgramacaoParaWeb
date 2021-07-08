@@ -9,7 +9,7 @@ import api from '../services/api';
 // instalar axios: npm install axios
 // criar componente para listar livros
 
-function ListarLivros() {
+function Menu() {
     //const [livros, setLivros] = useState([]);
 
     // useEffect(() => {
@@ -30,10 +30,10 @@ function ListarLivros() {
                     
                 </li>
                 <li>
-                    <Link to="">Usuários cadastrados</Link>
+                    <Link to="/usuarios">Usuários cadastrados</Link>
                 </li>
                 <li>
-                    <Link to="">Vinhos cadastrados</Link>
+                    <Link to="/produtos">Produtos cadastrados</Link>
                 </li>
             </ul>
         </div>
@@ -41,4 +41,4 @@ function ListarLivros() {
 }
 
 
-export default ListarLivros;
+export default Menu;

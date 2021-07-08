@@ -14,4 +14,14 @@ router.post('/wine', async function(req, res) {
     }
 });
 
+router.get('/wines', async function(req, res) {
+    try {
+        const wines = await wineService.getWines();
+        res.json(wines);
+    } catch (error) {
+        console.log(error);
+        res.json({messagem: error.message });
+    }
+})
+
 module.exports = router;

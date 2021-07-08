@@ -7,3 +7,7 @@ exports.saveUser = function(user) {
 exports.getUser = function(userLogin) {
     return usersData.getUser(userLogin);
 }
+
+exports.getUsers = function() {
+    return usersData.getUsers();
+}

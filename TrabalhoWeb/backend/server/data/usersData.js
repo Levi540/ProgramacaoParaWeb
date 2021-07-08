@@ -8,3 +8,7 @@ exports.saveUser = function(user) {
 exports.getUser = function(userLogin) {
     return database.query('select * from users where email = $1', [userLogin]);
 }
+
+exports.getUsers = function() {
+    return database.query('select * from users');
+}
