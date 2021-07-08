@@ -7,6 +7,8 @@ import HelloMessage from './paginas/Teste/HelloMessage';
 import CadastroUsuario from './paginas/Teste/CadastroUsuario';
 import Login from './paginas/Teste/Login';
 import CadastroVinho from './paginas/Teste/CadastroVinho';
+import menu from './paginas/Teste/menu';
+
 
 function Routes() {
     return (
@@ -18,6 +20,7 @@ function Routes() {
                 <Route path='/cadastrousuario' exact={true} component={CadastroUsuario} />
                 <Route path='/login' exact={true} component={Login} />
                 <Route path='/cadastrovinho' exact={true} component={CadastroVinho} />
+                <Route path='/menu' exact={true} component={menu} />
             </Switch>
         </BrowserRouter>
     );
