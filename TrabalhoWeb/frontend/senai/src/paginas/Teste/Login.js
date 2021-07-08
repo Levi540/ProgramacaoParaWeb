@@ -66,7 +66,7 @@ export default function SignIn() {
 
               console.log(response.data);
               
-              // history.push('/');
+              window.history.push('/menu');
           } catch (error) {
               alert("Erro ao efetuar login " + error.message);
           }
